@@ -50,13 +50,13 @@ body {
 }
 
 a {
-  color: #007bff;
+  color: #082a44;
   text-decoration: none;
 }
 
 a:hover {
-  color: #0056b3;
-  text-decoration: underline;
+  color: #082a44;
+  text-decoration: none;
 }
 
 b, strong {

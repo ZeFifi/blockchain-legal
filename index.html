@@ -9,16 +9,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- CSS Dependencies -->
-  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/tabs.css" />
 		<link rel="stylesheet" type="text/css" href="css/tabstyles.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-    crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/shards.css">
   <link rel="stylesheet" href="css/shards-extras.css">
+  <script src="js/modernizr.custom.js"></script>
 </head>
 
 <body class="shards-landing-page--1">
@@ -77,60 +75,31 @@
   <!-- / Welcome Section -->
 
   <!-- Our Services Section -->
-  <div id="our-services" class="our-services section py-4">
+  <div id="our-services" class="our-services section section-invert py-4">
     <h3 class="section-title text-center my-5">Nos prestations</h3>
     <!-- Features -->
-    <div class="features py-4 mb-4">
-      <div class="container">
-        <div class="row">
-          <div class="feature py-4 col-md-6 d-flex">
-            <div class="icon text-primary mr-3">
-              <i class="fa fa-paint-brush"></i>
-            </div>
-            <div class="px-4">
-              <h5>Design & Branding</h5>
-              <p>Quisque mollis mi ac aliquet accumsan. Sed sed dapibus libero. Nullam luctus purus duis sensibus signiferumque.</p>
-            </div>
-          </div>
-          <div class="feature py-4 col-md-6 d-flex">
-            <div class="icon text-primary mr-3">
-              <i class="fa fa-code"></i>
-            </div>
-            <div class="px-4">
-              <h5>Programming</h5>
-              <p>Quisque mollis mi ac aliquet accumsan. Sed sed dapibus libero. Nullam luctus purus duis sensibus signiferumque.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="feature py-4 col-md-6 d-flex">
-            <div class="icon text-primary mr-3">
-              <i class="fa fa-font"></i>
-            </div>
-            <div class="px-4">
-              <h5>Copywriting</h5>
-              <p>Quisque mollis mi ac aliquet accumsan. Sed sed dapibus libero. Nullam luctus purus duis sensibus signiferumque.</p>
-            </div>
-          </div>
-          <div class="feature py-4 col-md-6 d-flex">
-            <div class="icon text-primary mr-3">
-              <i class="fa fa-support"></i>
-            </div>
-            <div class="px-4">
-              <h5>Training & Support</h5>
-              <p>Quisque mollis mi ac aliquet accumsan. Sed sed dapibus libero. Nullam luctus purus duis sensibus signiferumque.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <section>
+      <div class="tabs tabs-style-iconbox py-5">
+        <nav>
+          <ul>
+            <li><a href="#section-iconbox-1"><i class="fas fa-percent fa-2x mb-2"></i><br /><span>Taxes</span></a></li>
+            <li><a href="#section-iconbox-2"><i class="fas fa-users fa-2x mb-2"></i><br /><span>Corporate & complicance</span></a></li>
+            <li><a href="#section-iconbox-3"><i class="fas fa-balance-scale fa-2x mb-2"></i><br /><span>Litigation</span></a></li>
+          </ul>
+        </nav>
+        <div class="content-wrap">
+          <section id="section-iconbox-1"><p>Contenu Taxes</p></section>
+          <section id="section-iconbox-2"><p>Contenu Corporate & Compliance</p></section>
+          <section id="section-iconbox-3"><p>Contenu Litigation</p></section>
+        </div><!-- /content -->
+      </div><!-- /tabs -->
+    </section>
     <!-- / Features -->
   </div>
   <!-- / Our Services Section -->
 
   <!-- Team Section -->
-  <div class="testimonials section-invert py-4">
+  <div class="testimonials section py-4">
     <h3 class="section-title text-center m-5">Equipe</h3>
     <div class="container py-5">
       <div class="row">
@@ -166,7 +135,7 @@
   <!-- / Team Section -->
 
   <!-- Our Blog Section -->
-  <div class="blog section section py-4">
+  <div class="blog section section-invert py-4">
     <h3 class="section-title text-center m-5">Actualités</h3>
 
     <div class="container">
@@ -216,7 +185,7 @@
   <!-- / Our Blog Section -->
 
   <!-- Contact Section -->
-  <div class="contact section-invert py-4">
+  <div class="contact section py-4">
     <h3 class="section-title text-center m-5">Contactez-nous</h3>
     <div class="container py-4">
       <div class="row justify-content-md-center px-4">
@@ -298,6 +267,16 @@
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+    <script src="js/cbpFWTabs.js"></script>
+    <script>
+			(function() {
+
+				[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+					new CBPFWTabs( el );
+				});
+
+			})();
+		</script>
 </body>
 
 </html>
