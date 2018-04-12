@@ -4796,6 +4796,10 @@ a.bg-light:hover, a.bg-light:focus {
   background-color: #212529 !important;
 }
 
+.bg-bcl-blue {
+  background-color: #082a44 !important;
+}
+
 .bg-dark.card .card-title,
 .bg-dark.card .card-body,
 .bg-dark.card .card-header,
