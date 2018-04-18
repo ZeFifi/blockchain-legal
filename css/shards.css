@@ -3913,11 +3913,11 @@ button.list-group-item-dark.active {
 }
 
 .popover .arrow::before {
-  border-width: calc($popover-arrow-width + 1px);
+  border-width: calc(popover-arrow-width + 1px);
 }
 
 .popover .arrow::after {
-  border-width: calc($popover-arrow-width + 1px);
+  border-width: calc(popover-arrow-width + 1px);
 }
 
 .bs-popover-top, .bs-popover-auto[x-placement^="top"] {
