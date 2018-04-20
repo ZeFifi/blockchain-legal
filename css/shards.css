@@ -2861,7 +2861,7 @@ i.material-icons {
 .card {
   background-color: #fff;
   border: none;
-  border-radius: 0.625rem;
+  /* border-radius: 0.625rem; */
   box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
 }
 
@@ -2975,10 +2975,10 @@ i.material-icons {
   border-radius: 0.625rem;
 }
 
-.card-img-top {
+/* .card-img-top {
   border-top-left-radius: 0.625rem;
   border-top-right-radius: 0.625rem;
-}
+} */
 
 .card-img-bottom {
   border-bottom-right-radius: 0.625rem;
