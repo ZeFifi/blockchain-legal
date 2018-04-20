@@ -77,13 +77,13 @@
 }
 
 .shards-landing-page--1 .testimonials .brand:hover {
-  max-width: 200px;
-  overflow: hidden;
   -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
   filter: grayscale(0%);
 }
 
-
+.maisondubtc-logo {
+  max-height: 53px;
+}
 
 .shards-app-promo-page--1 .welcome {
   position: relative;
