@@ -1,3 +1,5 @@
+var scroll = new SmoothScroll('a[href*="#"]');
+
 $(function () {
 	var $content = $('#jsonContent');
 	var data = {
