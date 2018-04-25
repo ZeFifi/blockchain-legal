@@ -24,8 +24,8 @@ $(function () {
 				var srcEnd = item.description.substring(srcStart).indexOf('"') + srcStart; // Find where the URL ends
 				var src = item.description.substring(srcStart, srcEnd); // Extract just the URL
 				output += '<div class="blog-element"><img class="card-img-top" src="' + src + '" width="360px" height="240px"></div></header>';
-				output += '<div class="card-body"><h4><a href="'+ item.link + '">' + item.title + '</a></h4>';
-				output += '<div class="post-meta"><span>By ' + item.author + '</span></div>';
+				output += '<div class="card-body"><h4><a target="_blank" href="'+ item.link + '">' + item.title + '</a></h4>';
+				// output += '<div class="post-meta"><span>By ' + item.author + '</span></div>';
 				var yourString = item.description.replace(/<img[^>]*>/g,""); //replace with your string.
 				var maxLength = 120 // maximum number of characters to extract
 				//trim the string to the maximum length
@@ -34,7 +34,7 @@ $(function () {
 				trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")))
 				output += '<p>' + trimmedString + '...</p>';
 				output += '</div></div></div>';
-				return k < 2;
+				return k < 1;
 			});
 			$content.html(output);
 		}

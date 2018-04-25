@@ -49,6 +49,11 @@ body {
   background-color: #fff;
 }
 
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 a {
   color: #082a44;
   text-decoration: none;
@@ -81,7 +86,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1 {
-  font-size: 2rem;
+  font-size: 3.5rem;
   letter-spacing: -0.0625rem;
   line-height: 3rem;
 }

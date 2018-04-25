@@ -143,6 +143,12 @@
 /* Content */
 .content-wrap {
 	position: relative;
+	background-color: #082a44;
+	color: white;
+}
+
+.content-wrap h4 {
+	color: white;
 }
 
 .content-wrap section {
