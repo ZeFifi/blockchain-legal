@@ -121,6 +121,31 @@ ul {
   padding-left: 0;
 }
 
+.testimonial ul {
+  padding-left: 15px;
+  color: #082a44;
+}
+
+.testimonial-img {
+  max-width: 30px;
+  height: 30px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 15px;
+  margin-right: 15px;
+  color: #082a44;
+}
+
+.testimonial-img-romain {
+  max-width: 30px;
+  height: 30px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  margin-left: 15px;
+  margin-right: 15px;
+  color: #082a44;
+}
+
 #map {
   width: 100%;
   height: 450px;
