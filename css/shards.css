@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1 {
-  font-size: 3.052rem;
+  font-size: 2rem;
   letter-spacing: -0.0625rem;
   line-height: 3rem;
 }
@@ -111,6 +111,10 @@ h6, .h6 {
   font-size: 1rem;
   line-height: 1.5rem;
   color: #007bff;
+}
+
+.hero-logo {
+  max-width: 100%;
 }
 
 #map {
@@ -163,9 +167,10 @@ p {
 }
 
 hr {
-  margin-top: 1.125rem;
+  margin-top: 0;
   margin-bottom: 1.125rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid white;
+  width: 100%;
 }
 
 small,
