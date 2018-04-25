@@ -3,7 +3,7 @@ var scroll = new SmoothScroll('a[href*="#"]');
 $(function () {
 	var $content = $('#jsonContent');
 	var data = {
-		rss_url: 'https://medium.jasonmdesign.com/feed'
+		rss_url: 'https://medium.com/feed/@BCLavocats/'
 	};
 	$.get('https://api.rss2json.com/v1/api.json', data, function (response) {
 		if (response.status == 'ok') {
@@ -15,7 +15,7 @@ $(function () {
 				 } else {
 					 visibleSm = ' visible-sm';
 				 }
-				output += '<div class="col-md-12 col-lg-4' + visibleSm + '">';
+				output += '<div class="col-md-12 col-lg-6' + visibleSm + '">';
 				output += '<div class="card mb-4"><header>';
 				// output += '<h4 class="date">' + $.format.date(item.pubDate, "dd<br>MMM") + "</h4>";
 				var tagIndex = item.description.indexOf('<img'); // Find where the img tag starts
