@@ -126,6 +126,14 @@ ul {
   padding-left: 0;
 }
 
+li {
+  list-style-position: inside;
+}
+
+.bio {
+  min-height: 192px;
+}
+
 .testimonial ul {
   padding-left: 15px;
   color: #082a44;
