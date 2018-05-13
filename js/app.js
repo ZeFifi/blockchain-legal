@@ -1,4 +1,4 @@
-var scroll = new SmoothScroll('a[href*="#"]');
+var scroll = new SmoothScroll('[href="#cabinet"], [href="#prestations"], [href="#team"], [href="#cabinet"], [href="#blog"], [href="#trust"], [href="#contact"]');
 
 $(function () {
 	var $content = $('#jsonContent');
@@ -15,7 +15,7 @@ $(function () {
 				 } else {
 					 visibleSm = ' visible-sm';
 				 }
-				output += '<div class="col-md-12 col-lg-6' + visibleSm + '">';
+				output += '<div class="col-md-12 col-lg-4' + visibleSm + '">';
 				output += '<div class="card mb-4"><header>';
 				// output += '<h4 class="date">' + $.format.date(item.pubDate, "dd<br>MMM") + "</h4>";
 				var tagIndex = item.description.indexOf('<img'); // Find where the img tag starts
@@ -23,7 +23,7 @@ $(function () {
 				var srcStart = srcIndex + 5; // Find where the actual image URL starts; 5 for the length of 'src="'
 				var srcEnd = item.description.substring(srcStart).indexOf('"') + srcStart; // Find where the URL ends
 				var src = item.description.substring(srcStart, srcEnd); // Extract just the URL
-				output += '<div class="blog-element"><img class="card-img-top" src="' + src + '" width="360px" height="240px"></div></header>';
+				output += '<div class="blog-element"><img class="card-img-top" src="' + src + '" width="360px" height="190px"></div></header>';
 				output += '<div class="card-body"><h4><a target="_blank" href="'+ item.link + '">' + item.title + '</a></h4>';
 				// output += '<div class="post-meta"><span>By ' + item.author + '</span></div>';
 				var yourString = item.description.replace(/<img[^>]*>/g,""); //replace with your string.
@@ -34,7 +34,7 @@ $(function () {
 				trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")))
 				output += '<p>' + trimmedString + '...</p>';
 				output += '</div></div></div>';
-				return k < 1;
+				return k < 2;
 			});
 			$content.html(output);
 		}
